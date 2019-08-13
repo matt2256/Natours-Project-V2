@@ -46,9 +46,9 @@ body {
 
 .text-box {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    background-color: red;
+    transform: translate(-50%, -50%);
 }
 
 .heading-primary {
@@ -60,7 +60,7 @@ body {
     display: block;
     font-size: 60px;
     font-weight: 400;
-    letter-spacing: 30px;
+    letter-spacing: 35px;
 }
 
 .heading-primary-sub {
