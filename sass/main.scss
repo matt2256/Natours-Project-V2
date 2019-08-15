@@ -1,10 +1,11 @@
 
-
+//colors
 $color-primary: #7ed56f;
 $color-primary-light: #55c57a;
 $color-primary-dark: #28b485;
 $color-grey-dark: #777;
-$color-white: red;
+$color-white: #fff;
+$color-black: #000;
 
 *,
 *::after,
@@ -143,12 +144,12 @@ body {
 
 .btn:hover {
     transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 }
 
 .btn:active {
     transform: translateY(-0.1rem);
-    box-shadow: 0 5 10 rgba(0, 0, 0, .2)
+    box-shadow: 0 5 10 rgba($color-black, 0.2);
 }
 
 .btn--white {
