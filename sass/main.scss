@@ -130,9 +130,9 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
+.btn {
+  &:link, &:visited {
+    text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
@@ -140,25 +140,25 @@ body {
   transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
-}
+  }
 
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-}
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
 
-.btn:active {
-  transform: translateY(-0.1rem);
+  &:active {
+    transform: translateY(-0.1rem);
   box-shadow: 0 5 10 rgba($color-black, 0.2);
-}
+  }
 
-.btn--white {
-  background-color: $color-white;
+  &--white {
+    background-color: $color-white;
   color: $color-grey-dark;
-}
+  }
 
-.btn:after {
-  content: "";
+  &:after {
+    content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -168,21 +168,22 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
-}
+  }
 
-.btn--white:after {
-  background: $color-white;
-}
+  &--white:after {
+    background-color: $color-white;
+  }
 
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
-}
+  }
 
-.btn--animated {
-  animation-name: btnMoveUp;
+  &--animated {
+    animation-name: btnMoveUp;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
   animation-delay: 0.75;
   animation-fill-mode: backwards;
+  }
 }
