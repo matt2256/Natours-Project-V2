@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/matt2256/Natours-Project-V2#readme",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }
